@@ -12,9 +12,5 @@ void loop() {
   valeur = (valeur - 0.5)/0.01; // ou *100 
   Serial.print(valeur); Serial.println(" °C"); //Conversion de la tension en une température. D'après la datasheet, la courbe de la tension en fonction de la température possède un coefficient directeur de 10 mV/°C et un offset de 0.5 V
   
-  if(valeur > 21)
-    digitalWrite(13, HIGH);
-  else
-    digitalWrite(13, LOW);
   delay(1000);
 }
